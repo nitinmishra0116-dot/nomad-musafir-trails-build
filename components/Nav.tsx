@@ -1,0 +1,3 @@
+'use client';
+import { useState } from 'react';
+export function Nav(){const [open,setOpen]=useState(false);return <header className="nav"><div className="container navInner"><a href="/" className="brand"><span className="brandMark">✦</span><span>Nomad Musafir</span></a><nav className={open?'navLinks open':'navLinks'}><a href="/explore">Explore</a><a href="/trails/ladakh">Trails</a><a href="/tribe">Community</a><a href="/stories">Stories</a><a href="/passport">Passport</a></nav><div className="navActions"><a className="login" href="/account">Log in</a><a className="button small" href="/explore">Find a trail</a></div><button className="menu" onClick={()=>setOpen(!open)} aria-label="Menu">☰</button></div></header>}
